@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
+	html {
+		font-family: Verdana,sans-serif;
+		font-size: 15px;
+		line-height: 1.5;
+
+
+	}
+
 	h1 {
 		color: grey;
 		float: center;
 		font: status-bar;
-		font-size: 48px;
+		font-size: 32px;
 
 
 	}
 
 
 
-	#side_bar a {
-		float: left;
-		width: 200px;
-		height: 400px;
-		background-color: grey;
-		border-radius: 10px;
-		text-align: center;
-		text-decoration: none;
+	#navigation ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+		top: 0; 
+		width: 100%;
+		background-color: #686361;
+		overflow: hidden;
 		color: white;
-		margin: 5px;
-		padding: 5px;
+
+	}
+
+	li {
+		float: left;
+		border-right: 1px solid #bbb;
+	}
+
+
+
+	li a {
 		display: block;
-		font: status-bar;
-		font-size: 24px;
-}
+		color: white;
+		padding: 14px 16px;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+
+	li a:hover {
+		background-color: #555;
+		color: white;
 
 
 
+
+
+	}
+
+	.active {
+		background-color: #4a6da7; 
+
+
+	}
+
+	#HomeBtn:hover {
+		background-color: #39537f; 
+
+
+
+
+	}
 </style>
 <head>
 	<title> Practice </title>
+
+
+
+
+<nav id=navigation>
+	<ul>
+		<li><a id="HomeBtn" class="active" href="">Home</a></li>	
+		<li><a href="">News</a></li>	
+		<li><a href="">Contact</a></li>
+	</ul>
+</nav>
 </head>
-<h1>Practice</h1>
 <body>
-<div id=side_bar>
-	<a href=""></a>
-	<a>Test</a>
-	<a>Test2</a>
 	
-	
-	
-</div>
 </body>
 </html>
